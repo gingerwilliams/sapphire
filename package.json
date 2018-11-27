@@ -1,0 +1,30 @@
+{
+  "name": "sapphire",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest",
+    "ks": "kss --source less --json builder > output/scripts/data-origin.json  --destination styleguide",
+    "dev": "webpack-dev-server --mode development --hot --open --config ./webpack.config.js",
+    "watch": "webpack  --mode development --watch --config ./webpack.config.js",
+    "build": "webpack --mode production --config ./webpack.prod.config.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {},
+  "devDependencies": {
+    "babel": "6.23.0",
+    "babel-core": "6.26.3",
+    "babel-env": "2.4.1",
+    "babel-eslint": "10.0.1",
+    "babel-jest": "23.6.0",
+    "babel-loader": "7.1.5",
+    "babel-preset-react": "6.24.1",
+    "eslint": "5.8.0",
+    "webpack": "4.26.1",
+    "webpack-cli": "3.1.2",
+    "webpack-dev-server": "3.1.10"
+  }
+}
