@@ -1,6 +1,7 @@
 const path = require('path');
 
 module.exports = {
+    mode: 'production',
     entry: './src/index.js',
     output: {
         filename: 'bundle.js',
@@ -39,6 +40,10 @@ module.exports = {
     },
     devServer: {
         port: 3000,
+        hot: true,
+        open: true,
+        compress: true,
+        watchContentBase: true,
         historyApiFallback: true,
         contentBase: path.join(__dirname, 'output')
     }

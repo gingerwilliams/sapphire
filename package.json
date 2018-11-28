@@ -5,15 +5,19 @@
   "main": "index.js",
   "scripts": {
     "test": "jest",
-    "ks": "kss --source less --json builder > output/scripts/data-origin.json  --destination styleguide",
-    "dev": "webpack-dev-server --mode development --hot --open --config ./webpack.config.js",
-    "watch": "webpack  --mode development --watch --config ./webpack.config.js",
-    "build": "webpack --mode production --config ./webpack.config.js"
+    "ks": "kss --source src/styles --json builder > output/scripts/data-origin.json  --destination styleguide",
+    "dev": "webpack-dev-server --config ./webpack.dev.js",
+    "watch": "webpack --watch --config ./webpack.dev.js",
+    "build": "webpack --config ./webpack.prod.js"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
-  "dependencies": {},
+  "dependencies": {
+    "react": "16.6.3",
+    "react-dom": "16.6.3",
+    "react-router-dom": "4.3.1"
+  },
   "devDependencies": {
     "babel": "6.23.0",
     "babel-core": "6.26.3",
