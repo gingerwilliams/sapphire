@@ -11,7 +11,7 @@ const Home = () => (
                         <div className="hero-onyx_child hero-onyx_child__primary animation__floating"></div>
                         <div className="hero-onyx_child hero-onyx_child__secondary animation__floating"></div>
                         <div className="hero-onyx_description animation__title-in">
-                            <h1 className="hero-onyx_header-text "><span className="hero-onyx_title">Onyx</span>Corporate IT Design System</h1>
+                            <h1 className="hero-onyx_header-text "><span className="hero-onyx_title">Sapphire</span>Corporate IT Design System</h1>
                             <p className="text-body text-body__light">Efficient User Interfaces created under consistent guidelines and principles</p>
                             <a href="#content-block" className="hero-onyx_scroll"></a>
                         </div>
