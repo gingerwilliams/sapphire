@@ -1,1 +1,1 @@
-# Sapphire Design System and Pattern Library
+# Sapphire Design System, Pattern Library and Living Styleguide

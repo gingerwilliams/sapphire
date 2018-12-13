@@ -6,9 +6,10 @@
   "scripts": {
     "test": "jest",
     "ks": "kss --source src/styles --json builder > output/scripts/data-origin.json  --destination styleguide",
-    "dev": "webpack-dev-server --config ./webpack.dev.js",
+    "serve": "webpack-dev-server --config ./webpack.dev.js",
     "watch": "webpack --watch --config ./webpack.dev.js",
-    "build": "webpack --config ./webpack.prod.js"
+    "build": "webpack --config ./webpack.prod.js",
+    "dev": "concurrently \"npm run watch\" \"npm run serve\""
   },
   "keywords": [],
   "author": "",
@@ -26,6 +27,7 @@
     "babel-jest": "23.6.0",
     "babel-loader": "7.1.5",
     "babel-preset-react": "6.24.1",
+    "concurrently": "4.1.0",
     "eslint": "5.8.0",
     "file-loader": "2.0.0",
     "webpack": "4.26.1",
